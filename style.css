@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Yeseva+One&display=swap');
+/* 
+   font-family: 'Nunito Sans', sans-serif;
+   font-family: 'Yeseva One', cursive; 
+*/
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Nunito Sans';
+}
+.wrapper {
+   max-width: 1170px;
+   margin: auto;
+}
+.project {
+   height: 700px;
+   background-color: #131313;
+   color: white;
+}
+
+
+.slider_titles {
+   margin: 0;
+   margin-bottom: 50px;
+   padding-top: 50px;
+
+   display: flex;
+   justify-content: flex-end;
+   list-style-type: none;
+}
+.slider_title {
+   margin-right: 59px;
+   padding: 6px 0;
+   font-family: 'Yeseva One';
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   cursor: pointer;
+   color: #E3B873;
+}
+.slider_title:hover,
+.slider_title.active {
+   border-bottom: 2px solid #E3B873;
+}
+
+
+
+.text {
+   position: relative;
+}
+.text h2 {
+   margin-bottom: 30px;
+
+   font-family: 'Yeseva One';
+   font-size: 27px;
+   font-weight: 400;
+   text-transform: uppercase;
+   color: #E3B873;
+}
+.text p,
+.text span {
+   font-size: 14px;
+   display: none;
+}
+.text .active {
+   display: inline;
+}
+.text p {
+   display: block;
+   max-width: 400px;
+}
+
+
+.list {
+   width: 400px;
+   margin-top: 30px;
+   margin-bottom: 80px;
+
+   display: flex;
+   flex-wrap: wrap;
+}
+.list div {
+   width: 200px;
+}
+.list h3 {
+   margin-top: 35px;
+   margin-bottom: 10px;
+
+   font-family: 'Yeseva One';
+   font-size: 18px;
+   font-weight: 400;
+   letter-spacing: -0.07em;
+   text-transform: uppercase;
+   color: #E3B873;
+}
+
+
+.slider_arrows {
+   display: flex;
+   align-items: center;
+}
+.slider_arrows .slider_arrow {
+   cursor: pointer;
+   transition: opacity 0.4s ease;
+}
+
+
+.slider_dots {
+   display: flex;
+   align-items: center;
+   margin: 0 6px;
+   margin-bottom: 5px;
+}
+.dot {
+   width: 8px;
+   height: 8px;
+   background: #6e6e6e;
+   border-radius: 50%;
+   margin: 0 5px;
+   cursor: pointer;
+   transition: background-color 0.4s ease;
+}
+.dot:hover,
+.dot.active {
+   background: #dfdfdf;
+}
+
+
+.slider_images {
+   position: absolute;
+   top: 0%;
+   right: 0%;
+}
+.img {
+   height: 480px;
+   width: 680px;
+   background-size: cover;
+   display: none;
+}
+.img.active {
+   display: block;
+}
